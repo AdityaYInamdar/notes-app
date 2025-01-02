@@ -34,14 +34,6 @@ def write_notes(notes):
     with open(NOTES_FILE, 'w') as file:
         json.dump(notes, file)
 
-@app.get('/')
-def read_root():
-    return {'Ping': 'Pong'}
-
-@app.get('/pipelines/parse')
-def parse_pipeline(pipeline: str = Form(...)):
-    return {'status': 'parsed'}
-
 @app.get('/notes')
 def list_notes():
     return read_notes()
