@@ -1,0 +1,60 @@
+@import "~antd/dist/antd.compact.css";
+
+.layout {
+  min-height: 100vh;
+}
+
+.header {
+  background: #001529;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.logo {
+  height: 40px;
+  position: absolute;
+  left: 20px;
+}
+
+.header-title {
+  color: white;
+  font-size: 24px;
+  margin: 0;
+}
+
+.content {
+  padding: 20px;
+  background: #f0f2f5;
+}
+
+.notes-container {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.notes-controls {
+  margin-bottom: 20px;
+}
+
+.notes-list {
+  margin-top: 20px;
+}
+
+.note-item {
+  padding: 16px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.note-item:hover {
+  background: #f5f5f5;
+}
+
+.note-date {
+  font-style: italic;
+  color: #888;
+  margin-right: 10px;
+}
